@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Conexão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .event, .news {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td, th {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: center;
+        }
+        .event-day {
+            background-color: #ffcc00;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clube Conexão</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Eventos</a>
+            <a href="#">Calendário</a>
+            <a href="#">Notícias</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="eventos">
+                <h2>Próximos Eventos</h2>
+                <div class="event">
+                    <h3>Workshop de Inovação</h3>
+                    <p><strong>Data:</strong> 15/06/2025</p>
+                    <p><strong>Local:</strong> Auditório Central</p>
+                    <p>Participe de palestras e dinâmicas sobre criatividade e inovação!</p>
+                </div>
+                <div class="event">
+                    <h3>Piquenique da Comunidade</h3>
+                    <p><strong>Data:</strong> 22/06/2025</p>
+                    <p><strong>Local:</strong> Parque da Cidade</p>
+                    <p>Um dia de lazer, comida e atividades ao ar livre para toda a família.</p>
+                </div>
+            </section>
+
+            <section id="calendario">
+                <h2>Calendário de Junho 2025</h2>
+                <table>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                    </tr>
+                    <tr>
+                        <td class="event-day">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                    </tr>
+                    <tr>
+                        <td class="event-day">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="noticias">
+                <h2>Notícias</h2>
+                <div class="news">
+                    <h3>Nova Parceria com ONG VerdeVida</h3>
+                    <p><strong>Data:</strong> 01/06/2025</p>
+                    <p>O Clube Conexão firmou uma nova parceria para promover ações sustentáveis e eventos ecológicos.</p>
+                </div>
+                <div class="news">
+                    <h3>Clube é destaque em evento regional</h3>
+                    <p><strong>Data:</strong> 29/05/2025</p>
+                    <p>Recebemos reconhecimento por nosso trabalho comunitário no Encontro Regional de Clubes Sociais.</p>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.clubesdobrasil.org" target="_blank">Clubes do Brasil</a></li>
+            </ul>
+            <h3>Informações</h3>
+            <p>Email: contato@clubeconexao.org</p>
+            <p>Telefone: (11) 99999-0000</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Clube Conexão. Todos os direitos reservados.</p>
+        <p>Siga-nos: Facebook | Instagram | Twitter</p>
+    </footer>
+</body>
+</html>
